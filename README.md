@@ -3,7 +3,7 @@
 
 Transmogrifier is a tool to help setup your database fixtures before running your tests.
 
-This is repository contains a Behat Extension for Transmogrifier.
+This is repository contains the Transmogrifier Extension for Behat.
 
 This allows you to use Transmogrifier directly from your Behat `.feature` files!
 
@@ -16,6 +16,7 @@ Open your `composer.json` file, and add this to the `require` section:
 ```json
 "linkorb/transmogrifierextension": "dev-master"
 ```
+
 ## Enabling the Behat extension
 
 Edit your `features/bootstrap/FeatureContext.php` file, and add the following line to the `__construct` method:
@@ -26,7 +27,7 @@ $this->useContext(
 );
 ```
 
-### How to use the extension
+### How to use the extension in your .feature files
 
 You can use the following new syntax in your `.feature` files:
 
@@ -37,12 +38,13 @@ You can use the following new syntax in your `.feature` files:
         Then I should have "2" records in the "user" table
 ```
 
-This example scenario will connect to the database `test`, load dataset `user.yml`, and apply it.
+This example scenario will tell Behat to connect to the database `test`, load dataset `user.yml`, and apply it.
 After that it will verify the `user` table contains 2 records (just like the yml file).
 
-### Configuring Behat
+### Configuring the extension in behat.yml
 
-For this to work, you will need to tell Behat and Transmogrifier where to find your datasets, and where to find your database config files.
+For this to work, you will need to tell Behat and Transmogrifier where to find your datasets,
+and where to find your database config files.
 
 Edit your `behat.yml` file, and add the following:
 
