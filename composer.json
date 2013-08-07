@@ -1,0 +1,17 @@
+{
+    "name": "linkorb/transmogrifierextension",
+    "description": "Behat Extension for the Transmogrifier database fixture library",
+    "homepage": "http://www.github.com/linkorb/transmogrifierextension",
+    "keywords": ["php", "fixture", "testing", "database", "transmogrifier", "behat", "extension"],
+    "type": "library",
+    "minimum-stability": "dev" ,
+    "require": {
+        "linkorb/transmogrifier": "dev-master",
+        "behat/behat": "2.4.*@stable"
+    },
+    "autoload": {
+        "psr-0": {
+            "LinkORB\\": "src/"
+        }
+    }
+}
