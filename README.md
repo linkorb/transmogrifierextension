@@ -66,3 +66,10 @@ The `features/` directory in this repository contains a fully functional `transm
 
 Check the Transmogrifier repo for more information:
 [http://www.github.com/linkorb/transmogrifier/](http://www.github.com/linkorb/transmogrifier/)
+
+## Brought to you by the LinkORB Engineering team
+
+<img src="http://www.linkorb.com/d/meta/tier1/images/linkorbengineering-logo.png" width="200px" /><br />
+Check out our other projects at [linkorb.com/engineering](http://www.linkorb.com/engineering).
+
+Btw, we're hiring!
