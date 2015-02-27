@@ -4,10 +4,11 @@
     "homepage": "http://www.github.com/linkorb/transmogrifierextension",
     "keywords": ["php", "fixture", "testing", "database", "transmogrifier", "behat", "extension"],
     "type": "library",
+    "license": "MIT",
     "minimum-stability": "dev" ,
     "require": {
         "linkorb/transmogrifier": "~1.0",
-        "behat/behat": "~2.4"
+        "behat/behat": "~3.0"
     },
     "autoload": {
         "psr-0": {
