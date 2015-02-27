@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "d6edd62f37025b3dacd9167231731af9",
+    "hash": "2160d0a015e7cbc6315dec215c31de9a",
     "packages": [
         {
             "name": "behat/behat",
@@ -135,26 +136,25 @@
         },
         {
             "name": "linkorb/transmogrifier",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/linkorb/transmogrifier.git",
-                "reference": "e12059e3f22f168e012fe192952129536f959c80"
+                "reference": "7eb33a81234799b1730f243248605773774b32ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/linkorb/transmogrifier/zipball/e12059e3f22f168e012fe192952129536f959c80",
-                "reference": "e12059e3f22f168e012fe192952129536f959c80",
+                "url": "https://api.github.com/repos/linkorb/transmogrifier/zipball/7eb33a81234799b1730f243248605773774b32ad",
+                "reference": "7eb33a81234799b1730f243248605773774b32ad",
                 "shasum": ""
             },
             "require": {
-                "behat/behat": "2.4.*@stable",
-                "phpunit/dbunit": "1.2.*@dev",
-                "phpunit/phpunit": "3.7.*@dev",
-                "symfony/console": "2.4.*@dev"
+                "phpunit/dbunit": "~1.2",
+                "phpunit/phpunit": "~3.7",
+                "symfony/console": "~2.4"
             },
             "require-dev": {
-                "sami/sami": "1.0.*@dev",
+                "sami/sami": "~1.0",
                 "squizlabs/php_codesniffer": "dev-master"
             },
             "bin": [
@@ -176,7 +176,7 @@
                 "testing",
                 "transmogrifier"
             ],
-            "time": "2013-08-07 16:54:15"
+            "time": "2015-02-26 08:36:58"
         },
         {
             "name": "phpunit/dbunit",
@@ -1020,21 +1020,12 @@
             "time": "2013-07-21 20:19:01"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "linkorb/transmogrifier": 20,
-        "behat/behat": 0
-    },
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }
