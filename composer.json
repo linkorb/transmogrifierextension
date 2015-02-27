@@ -6,7 +6,7 @@
     "type": "library",
     "minimum-stability": "dev" ,
     "require": {
-        "linkorb/transmogrifier": "dev-master",
+        "linkorb/transmogrifier": "~1.0",
         "behat/behat": "~2.4"
     },
     "autoload": {
