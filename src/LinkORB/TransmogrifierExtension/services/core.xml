@@ -14,7 +14,7 @@
         <service id="behat.transmogrifierextension.context.initializer" class="%behat.transmogrifierextension.context.initializer.class%">
             <argument>%behat.transmogrifierextension.dataset_dir%</argument>
             <argument>%behat.transmogrifierextension.dbconf_dir%</argument>
-            <tag name="behat.context.initializer" />
+            <tag name="context.initializer" />
         </service>
     </services>
 

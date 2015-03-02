@@ -2,8 +2,8 @@
 
 namespace LinkORB\TransmogrifierExtension\Initializer;
 
-use Behat\Behat\Context\Initializer\InitializerInterface;
-use Behat\Behat\Context\ContextInterface;
+use Behat\Behat\Context\Context;
+use Behat\Behat\Context\Initializer\ContextInitializer;
 use LinkORB\TransmogrifierExtension\TransMogrifierContext;
 
 /**
@@ -12,7 +12,7 @@ use LinkORB\TransmogrifierExtension\TransMogrifierContext;
  *
  * @author Joost Faassen <j.faassen@linkorb.com>
  */
-class TransmogrifierInitializer implements InitializerInterface
+class TransmogrifierInitializer implements ContextInitializer
 {
     private $dbconf_dir;
     private $dataset_dir;
@@ -47,9 +47,9 @@ class TransmogrifierInitializer implements InitializerInterface
     /**
      * Initializes provided context.
      *
-     * @param ContextInterface $context
+     * @param Context $context
      */
-    public function initialize(ContextInterface $context)
+    public function initializeContext(Context $context)
     {
         $context->setDatasetDir($this->dataset_dir);
         $context->setDbConfDir($this->dbconf_dir);

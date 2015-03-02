@@ -2,11 +2,11 @@
 
 namespace LinkORB\TransmogrifierExtension;
 
-use Behat\Behat\Context\BehatContext;
+use Behat\Behat\Context\Context;
 use LinkORB\Transmogrifier\Dataset;
 use LinkORB\Transmogrifier\Database;
 
-class TransmogrifierContext extends BehatContext
+class TransmogrifierContext implements Context
 {
 
     /**
@@ -34,7 +34,7 @@ class TransmogrifierContext extends BehatContext
      *
      * @param array $parameters context parameters (set them up through behat.yml)
      */
-    public function __construct(array $parameters)
+    public function __construct(array $parameters = [])
     {
     }
 

@@ -1,13 +1,9 @@
 <?php
 
-use Behat\Behat\Context\ClosuredContextInterface;
-use Behat\Behat\Context\TranslatedContextInterface;
-use Behat\Behat\Context\BehatContext;
-use Behat\Behat\Exception\PendingException;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
-
 use LinkORB\TransmogrifierExtension\TransmogrifierContext;
+use Behat\Behat\Context\Context;
+use Behat\Behat\Hook\Scope\BeforeScenarioScope;
+
 
 //
 // Require 3rd-party libraries here:
@@ -19,16 +15,14 @@ use LinkORB\TransmogrifierExtension\TransmogrifierContext;
 /**
  * Features context.
  */
-class FeatureContext extends BehatContext
+class FeatureContext implements Context
 {
     /**
-     * Initializes context.
-     * Every scenario gets it's own context object.
-     *
-     * @param array $parameters context parameters (set them up through behat.yml)
+     * @BeforeScenario
      */
-    public function __construct(array $parameters)
+    public function gatherContexts(BeforeScenarioScope $scope)
     {
-        $this->useContext('transmogrifierextension', new TransmogrifierContext($parameters));
+        $environment = $scope->getEnvironment();
+        $environment->getContext('LinkORB\TransmogrifierExtension\TransmogrifierContext');
     }
 }

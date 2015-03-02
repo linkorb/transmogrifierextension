@@ -187,20 +187,20 @@
         },
         {
             "name": "linkorb/transmogrifier",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/linkorb/transmogrifier.git",
-                "reference": "7eb33a81234799b1730f243248605773774b32ad"
+                "reference": "d9b1bf796c674def8428ff6231a7d7c95eec6107"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/linkorb/transmogrifier/zipball/7eb33a81234799b1730f243248605773774b32ad",
-                "reference": "7eb33a81234799b1730f243248605773774b32ad",
+                "url": "https://api.github.com/repos/linkorb/transmogrifier/zipball/d9b1bf796c674def8428ff6231a7d7c95eec6107",
+                "reference": "d9b1bf796c674def8428ff6231a7d7c95eec6107",
                 "shasum": ""
             },
             "require": {
-                "phpunit/dbunit": "~1.2",
+                "phpunit/dbunit": "~1.3",
                 "phpunit/phpunit": "~3.7",
                 "symfony/console": "~2.4"
             },
@@ -227,7 +227,7 @@
                 "testing",
                 "transmogrifier"
             ],
-            "time": "2015-02-26 08:36:58"
+            "time": "2015-03-02 07:39:49"
         },
         {
             "name": "phpunit/dbunit",
