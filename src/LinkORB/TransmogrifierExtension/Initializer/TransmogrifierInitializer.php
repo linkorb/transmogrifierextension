@@ -51,6 +51,10 @@ class TransmogrifierInitializer implements ContextInitializer
      */
     public function initializeContext(Context $context)
     {
+        if (!$context instanceof TransMogrifierContext) {
+            return;
+        }
+
         $context->setDatasetDir($this->dataset_dir);
         $context->setDbConfDir($this->dbconf_dir);
     }
